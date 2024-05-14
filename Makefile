@@ -6,7 +6,7 @@
 #    By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/25 12:59:00 by lmeubrin          #+#    #+#              #
-#    Updated: 2024/05/13 11:20:11 by lmeubrin         ###   ########.fr        #
+#    Updated: 2024/05/14 15:30:08 by lmeubrin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS = main.c ft_strnstr_check.c ft_isprint_check.c ft_memchr_check.c \
 	   ft_atoi_check.c ft_bzero_check.c ft_strncmp_check.c \
 	   ft_calloc_check.c ft_strdup_check.c ft_substr_check.c \
 	   ft_strlcpy_check.c ft_striteri_check.c ft_strmapi_check.c \
-	   ft_putchar_fd_check.c
+	   ft_putchar_fd_check.c ft_itoa_check.c
 
 OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 LIBPATH = ../Libft/
@@ -40,7 +40,7 @@ $(OBJ_DIR):
 	mkdir $@
 
 lib:
-	cd ../ && $(MAKE) re
+	cd ../Libft && $(MAKE) re
 	$(MAKE)
 
 all: $(NAME)

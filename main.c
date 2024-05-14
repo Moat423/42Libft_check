@@ -6,7 +6,7 @@
 /*   By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 13:41:20 by lmeubrin          #+#    #+#             */
-/*   Updated: 2024/05/13 11:44:04 by lmeubrin         ###   ########.fr       */
+/*   Updated: 2024/05/14 15:28:59 by lmeubrin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	strlcpy_test_cases(void);
 int	striteri_test_cases(void);
 int	strmapi_test_cases(void);
 int	putchar_test_cases(void);
+int	itoa_test_cases(void);
 
 int	main(void)
 {
@@ -36,6 +37,7 @@ int	main(void)
 	strncmp_test_cases();
 	calloc_test_cases();
 	strdup_test_cases();
+	itoa_test_cases();
 	//strlcpy_test_cases();
 	striteri_test_cases();
 	strmapi_test_cases();
