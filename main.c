@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+        */
+/*   By: lmeubrin <lmeubrin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 13:41:20 by lmeubrin          #+#    #+#             */
-/*   Updated: 2024/05/13 11:44:04 by lmeubrin         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:35:48 by lmeubrin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main(void)
 	strncmp_test_cases();
 	calloc_test_cases();
 	strdup_test_cases();
-	//strlcpy_test_cases();
+	strlcpy_test_cases();
 	striteri_test_cases();
 	strmapi_test_cases();
 	//substr_test_cases();

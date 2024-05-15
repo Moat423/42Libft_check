@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+         #
+#    By: lmeubrin <lmeubrin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/25 12:59:00 by lmeubrin          #+#    #+#              #
-#    Updated: 2024/05/13 11:20:11 by lmeubrin         ###   ########.fr        #
+#    Updated: 2024/05/15 11:39:46 by lmeubrin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ $(OBJ_DIR):
 	mkdir $@
 
 lib:
-	cd ../ && $(MAKE) re
+	cd $(LIBPATH) && $(MAKE) re
 	$(MAKE)
 
 all: $(NAME)
@@ -61,6 +61,6 @@ debug:: DEBUG += -g
 debug:: $(lib_debug) $(DEB_NAME)
 
 lib_debug:
-	cd ../ && $(MAKE) debug
+	cd $(LIBPATH) && $(MAKE) debug
 
 .PHONY: all, clean, fclean, re, g, lib, lib_debug, debug
