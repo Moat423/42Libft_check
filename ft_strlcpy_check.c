@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#define _BSD_SOURCE
-#include <string.h>
-#include <stdio.h>
 #include "libft_check.h"
 
 /* this test needs WORK!!!*/

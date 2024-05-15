@@ -13,6 +13,7 @@
 #include <ctype.h>
 #include <strings.h>
 #include <string.h>
+#include <bsd/string.h>
 #include <stdlib.h>
 // library for actual funcitons
 #include <stdio.h>
@@ -30,4 +31,3 @@ int	atoi_test_cases(void);
 int	striteri_check_cases(void);
 int	strmapi_check_cases(void);
 int	itoa_test_cases(void);
-
