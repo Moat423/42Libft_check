@@ -21,7 +21,7 @@ SRCS = main.c ft_strnstr_check.c ft_isprint_check.c ft_memchr_check.c \
 	   ft_atoi_check.c ft_bzero_check.c ft_strncmp_check.c \
 	   ft_calloc_check.c ft_strdup_check.c ft_substr_check.c \
 	   ft_strlcpy_check.c ft_striteri_check.c ft_strmapi_check.c \
-	   ft_putchar_fd_check.c
+	   ft_putchar_fd_check.c ft_itoa_check.c ft_split_check.c
 
 OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 LIBPATH = ../Libft/

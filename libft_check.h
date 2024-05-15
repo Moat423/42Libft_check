@@ -6,7 +6,7 @@
 /*   By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 10:48:19 by lmeubrin          #+#    #+#             */
-/*   Updated: 2024/05/13 11:08:49 by lmeubrin         ###   ########.fr       */
+/*   Updated: 2024/05/14 16:21:53 by lmeubrin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ int	isprint_test_cases(void);
 int	atoi_test_cases(void);
 int	striteri_check_cases(void);
 int	strmapi_check_cases(void);
+int	itoa_test_cases(void);
+

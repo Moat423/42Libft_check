@@ -25,6 +25,8 @@ int	strlcpy_test_cases(void);
 int	striteri_test_cases(void);
 int	strmapi_test_cases(void);
 int	putchar_test_cases(void);
+int	itoa_test_cases(void);
+int	split_test_cases(void);
 
 int	main(void)
 {
@@ -37,6 +39,8 @@ int	main(void)
 	calloc_test_cases();
 	strdup_test_cases();
 	strlcpy_test_cases();
+	itoa_test_cases();
+	split_test_cases();
 	striteri_test_cases();
 	strmapi_test_cases();
 	//substr_test_cases();
