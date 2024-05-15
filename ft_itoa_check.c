@@ -26,6 +26,8 @@ static int	run_test(int num)
 		free(strnum);
 		return (1);
 	}
+	else 
+		printf(COLOR_GREEN "PASS\n" COLOR_RESET);
 	free(strnum);
 	return (0);
 }
@@ -38,7 +40,7 @@ int	itoa_test_cases(void)
 
 	i = 0;
 	res = 0;
-	printf(COLOR_BLUE "itoa\n(if nothing is printed here, you passed)\n" COLOR_RESET);
+	printf(COLOR_BLUE "itoa\n" COLOR_RESET);
 	while (num_array[i])
 		res += run_test(num_array[i++]);
 	return (1);

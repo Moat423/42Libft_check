@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft_check.h"
+//this test is not working, don't use it!!!!!!!!
 
 int	strdup_test_cases(void)
 {

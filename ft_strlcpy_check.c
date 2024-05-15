@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft_check.h"
+#include <bsd/string.h>
 
 /* this test needs WORK!!!*/
 

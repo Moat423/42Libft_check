@@ -25,7 +25,7 @@ SRCS = main.c ft_strnstr_check.c ft_isprint_check.c ft_memchr_check.c \
 
 OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 LIBPATH = ../Libft/
-LDFLAGS = -L$(LIBPATH) -lft
+LDFLAGS = -L$(LIBPATH) -lft -lbsd
 LIBNAME = libft.a
 DEBUG = 
 DEB_NAME = debug.out
