@@ -41,5 +41,6 @@ int	putchar_test_cases(void)
 	else
 		printf(COLOR_RED "FAIL\n" COLOR_RESET);
 	close(fd);
+	printf("\n");
 	return (1);
 }

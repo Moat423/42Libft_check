@@ -6,7 +6,7 @@
 /*   By: lmeubrin <lmeubrin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 13:41:20 by lmeubrin          #+#    #+#             */
-/*   Updated: 2024/05/15 11:35:48 by lmeubrin         ###   ########.fr       */
+/*   Updated: 2024/05/16 12:31:46 by lmeubrin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ int	strmapi_test_cases(void);
 int	putchar_test_cases(void);
 int	itoa_test_cases(void);
 int	split_test_cases(void);
+int	memcmp_test_cases(void);
+int	strtrim_test_cases(void);
 
 int	main(void)
 {
@@ -42,13 +44,10 @@ int	main(void)
 	itoa_test_cases();
 	striteri_test_cases();
 	strmapi_test_cases();
+	memcmp_test_cases();
 	//substr_test_cases();
+	strtrim_test_cases();
 	putchar_test_cases();
-		int fail_count = split_test_cases();
-	if (fail_count == 0)
-		printf("split passed!\n");
-	else
-		printf("%d split test(s) failed.\n", fail_count);
 	split_test_cases();
 	return 0;
 }

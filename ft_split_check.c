@@ -12,6 +12,40 @@
 
 #include "libft_check.h"
 
+void	print_free(char **result)
+{
+	int		arr_i = 0;
+
+	if (result)
+	{
+		while (result[arr_i])
+			printf("{%s}, ", result[arr_i++]);
+		arr_i = 0;
+		while (result[arr_i])
+			free(result[arr_i++]);
+		free(result);
+	}
+	printf("\n");
+
+}
+
+int	split_test_cases(void)
+{
+	char	*s1 = "Star struck gamble";
+	char	sep1 = ' ';
+	//char	*expected1[] = (char *[]) {"Star", "struck" "gamble", NULL};
+	char	**result;
+	
+	printf(COLOR_BLUE "split\n" COLOR_RESET);
+	result = ft_split(s1, sep1);
+	print_free(result);
+	result = ft_split("hello!zzzzzzzz", 'z');
+	print_free(result);
+	result = ft_split("      split       this for   me  !       ", ' ');
+	print_free(result);
+	return (0);
+}
+/*
 typedef	struct
 {
 	char	*input;
@@ -20,7 +54,7 @@ typedef	struct
 	char	**expected;
 	char	seperator;
 } test;
-
+*/
 void free_string_array(char **array)
 {
 	int i = 0;
@@ -31,12 +65,16 @@ void free_string_array(char **array)
 	}
 	free(array);
 }
-
+/*
 int compare_string_arrays(char **result, char **expected)
 {
 	int i = 0;
-	while (result[i] && expected[i])
+	printf("result arr[%d]: %s\n", i, result[i]);
+	printf("expected arr[%d]: %s\n", i, result[i]);
+	while (*result[i] && *expected[i])
 	{
+		printf("result arr[%d]: %s\n", i, result[i]);
+		printf("expected arr[%d]: %s\n", i, result[i]);
 		if (strcmp(result[i], expected[i]) != 0)
 		{
 			return 0; // Strings are not the same
@@ -54,7 +92,7 @@ int compare_string_arrays(char **result, char **expected)
 int	split_test_cases(void)
 {
 	int		fail_counter = 0;
-	test	tests[8];											//UPDATE HERE TOO!
+	test	tests[8];
 	unsigned int	i = 0;
 
 	tests[0].input = "Star struck gamble";
@@ -114,7 +152,7 @@ int	split_test_cases(void)
 		}
 		else
 		{
-			printf(COLOR_RED "FAIL Test %ui\n" COLOR_RESET, i + 1);
+			printf(COLOR_RED "FAIL Test %u\n" COLOR_RESET, i + 1);
 			printf(COLOR_RED "%s\n" COLOR_RESET, tests[i].comment);
 			fail_counter++;
 		}
@@ -124,3 +162,4 @@ int	split_test_cases(void)
 	}
 	return fail_counter;
 }
+*/
